@@ -7,6 +7,9 @@ $pythonFile = ".\hello.py"
 # Initialize a flag to track successful runs
 $allRunsSuccessful = $true
 
+Remove-Item ".\.git" -Force -Recurse
+Remove-Item "4" -Force -ErrorAction SilentlyContinue
+
 # Compile C++ file
 Write-Host "Compiling hello.cpp..."
 $cppCompile = g++ $cppFile -o hello_cpp.exe 2>&1
