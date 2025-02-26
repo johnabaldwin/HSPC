@@ -52,7 +52,7 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host "Java run successful"
 	Remove-Item $javaFile -Force
 	Remove-Item "hello.class" -Force
-	Write-Host "Python files scrubbed"
+	Write-Host "Java files scrubbed"
 } else {
     Write-Host "Java run failed"
 	$allRunsSuccessful = $false
